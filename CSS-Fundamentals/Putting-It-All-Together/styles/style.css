@@ -1,8 +1,24 @@
+html {
+    font-size: 18px;
+}
+
 body {
-  font-size: 18px;
+  font-size: 1rem;
   font-family: "Lato", sans-serif;
   color: #2e354f;
   margin: 0;
+}
+
+.section-one {
+  font-size: 2rem;
+}
+
+ul {
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
 }
 
 h1,
@@ -14,12 +30,12 @@ strong {
 /* Typography */
 
 h1 {
-  font-size: 36px;
+  font-size: 3rem;
   margin: 0;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 2rem;
   color: #ef5839;
 }
 
@@ -35,7 +51,8 @@ a:hover {
 /* Layout */
 
 .container {
-  width: 620px;
+  width: 90%;
+  max-width: 620px;
   margin: 0 auto;
 }
 
@@ -46,14 +63,13 @@ header {
 }
 
 .section-one {
-    padding: 45px 0;
+  padding: 45px 0;
 }
 
 .section-two {
   background-color: #2e354f;
   color: white;
   padding: 45px 0;
-
 }
 
 /* Buttons */
@@ -72,8 +88,8 @@ header {
 }
 
 .btn-accent:hover {
-    background-color: #d4b44c;
-    color: #2e354f;
+  background-color: #d4b44c;
+  color: #2e354f;
 }
 
 .btn-white {
@@ -82,6 +98,6 @@ header {
 }
 
 .btn-white:hover {
-    background-color: #999;
-    color: #2e354f;
+  background-color: #999;
+  color: #2e354f;
 }
