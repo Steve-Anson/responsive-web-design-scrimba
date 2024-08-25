@@ -6,15 +6,23 @@ body {
     text-align: center;
 }
 
+/* ****************
+  Typography
+****************** */
+
 h1 {
     font-size: 2.25rem;
     font-weight: 300;
+    color: #fff;
+    margin: 2em 0;
 }
 
 h1 + p {
     color: #f18119;
     font-weight: 900;
     font-size: 1.3125rem;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -33,6 +41,7 @@ h2 + p {
     font-weight: 900;
     color: #f18119;
     text-transform: uppercase;
+    order: -1;
 }
 
 .fine-print {
@@ -43,3 +52,21 @@ h2 + p {
 strong {
     font-weight: 900;
 }
+
+/* ****************
+  Intro Section
+****************** */
+
+.intro {
+    background-color: #404040;
+    background-image: url(../images/dark-ribs.jpg);
+    padding: 0 0.5em 2em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
