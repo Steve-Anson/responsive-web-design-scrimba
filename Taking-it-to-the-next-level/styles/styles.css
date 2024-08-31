@@ -58,6 +58,22 @@ strong {
   margin-top: 1.25em;
 }
 
+.section-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin-top: 10px;
+    background: #ffe600;
+}
+
+.section-title-center::after {
+    text-align: center;
+    /* margin: 10px auto 0; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .section-title:first-child {
     margin-top: 0;
 }
