@@ -89,10 +89,16 @@ strong {
 .nav {
   position: fixed;
   background: #000;
+  width: 100%;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 100%;
+  transform: translateX(0);
+}
+
+.navigation-open {
+    transform: translateX(-100%);
 }
 
 .nav-list {
@@ -117,6 +123,17 @@ strong {
 .nav-link:hover,
 .nav-link:focus {
     color: #ffe600;
+}
+
+.close-nav {
+    border: 0;
+    background: 0;
+    color: #ffe600;
+    font-weight: 700;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5em;
+    position: absolute;
 }
 
 /* footer */
