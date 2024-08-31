@@ -10,6 +10,11 @@ body {
   line-height: 1.6;
 }
 
+img {
+    max-width: 100%;
+    /* display: block; */
+}
+
 /* *************************
         Typography
 *************************** */
@@ -24,6 +29,23 @@ strong {
   color: #ffe600;
 }
 
+.page-title,
+.subtitle {
+  grid-column: 2 / -2;
+  color: #000;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  margin-top: 0.5em 0 3em;
+}
+
 .hero-title {
   font-size: 1.5rem;
   line-height: 1.4;
@@ -34,6 +56,10 @@ strong {
   font-size: 1.125rem;
   color: #000;
   margin-top: 1.25em;
+}
+
+.section-title:first-child {
+    margin-top: 0;
 }
 
 /* buttons */
@@ -263,11 +289,11 @@ strong {
 }
 
 @media (min-width: 400px) {
-    .hero > * {
-        margin-right: 20%;
-    }
+  .hero > * {
+    margin-right: 20%;
+  }
 }
- 
+
 @media (min-width: 600px) {
   .hero {
     padding: 10em 0 6em;
@@ -299,4 +325,31 @@ strong {
   .col:first-child {
     grid-column: 2 / span 1;
   }
+}
+
+/* *************************
+       Template Page
+*************************** */
+
+.main-template {
+    padding: 4em 0;
+}
+
+.main-template > * {
+    grid-column: 2 / -2;
+}
+
+.main-image {
+    margin-bottom: 1.5em;
+    box-shadow: 5px 5px 0px black, 10px 10px 0px #ffe600;
+}
+
+@media (min-width: 600px) {
+    .main-image {
+        grid-column: 2;
+    }
+
+    .main-text {
+        grid-column: 3 / span 2;
+    }
 }
